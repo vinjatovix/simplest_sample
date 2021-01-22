@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML & CSS HW</h1>
+      <h2>HAB JSB07CO</h2>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside>
+      <article>
+        <header>
+          <img src="./assets/img/profile.jpg" alt="avatar" />
+          <h3>Pablo Viña</h3>
+          <ul>
+            <li>Edad: 36 años.</li>
+            <li>Natural de Santiago de Compostela</li>
+          </ul>
+        </header>
+        <section>
+          <h4>RRSS</h4>
+          <ul>
+            <li>
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/1337sound/">Pablo Viña</a>
+            </li>
+            <li>
+              ImDB:
+              <a href="https://www.imdb.com/name/nm4453287/">Pablo Viña</a>
+            </li>
+            <li>
+              Ig Developer:
+              <a href="https://www.instagram.com/vinjadevix/">@vinjadevix</a>
+            </li>
+            <li>
+              Ig Sonido:
+              <a href="https://www.instagram.com/vinjatovix/">@vinjatovix</a>
+            </li>
+            <li>
+              Refraneiro Galego:
+              <a href="https://www.instagram.com/refraneiro_galego/"
+                >@refraneiro_galego</a
+              >
+            </li>
+            <li>
+              Github: <a href="https://github.com/vinjatovix">vinjatovix</a>
+            </li>
+            <li>
+              Codewars:
+              <a href="https://www.codewars.com/users/vinjatovix">Vinjatovix</a>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </aside>
+    <main>
+      <header>
+        <h1>Contacto</h1>
+      </header>
+      <form id="contact" method="get" action="">
+        <fieldset>
+          <legend>Informacion de contacto</legend>
+
+          <label for="name">Nombre</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+            autofocus
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+          <label for="url">Url</label>
+          <input
+            type="url"
+            name="url"
+            id="url"
+            placeholder="Escribe la URL de tu página web personal"
+          />
+
+          <label for="date">Fecha</label>
+          <input type="date" name="date" id="date" />
+          <label for="phone">Teléfono</label>
+          <input type="tel" name="phone" id="phone" />
+          <label for="bio">bio</label>
+          <textarea
+            name="bio"
+            id="bio"
+            cols="30"
+            rows="10"
+            placeholder="Cuéntanos algo sobre ti..."
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Gestion del tiempo</legend>
+
+          <label for="time">Tiempo</label>
+          <input type="time" name="time" id="time" />
+          <label for="datetime">Fecha y hora</label>
+          <input type="datetime-local" name="datetime" id="datetime" />
+          <label for="month">Mes</label>
+          <input type="month" name="month" id="month" />
+          <label for="week">Semana</label>
+          <input type="week" name="week" id="week" />
+        </fieldset>
+        <fieldset>
+          <legend>Buscador de productos</legend>
+
+          <label for="search">Término de Búsqueda</label>
+          <input type="search" name="search" id="search" />
+          <label for="favColor">Color favorito</label>
+          <input type="color" name="favColor" id="favColor" />
+          <label for="number">Número</label>
+          <input type="number" name="number" id="number" min="-10" max="10" />
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>

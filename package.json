@@ -1,0 +1,15 @@
+{
+  "name": "hab_zoe_hw2",
+  "version": "1.0.0",
+  "description": "homework assignement 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server www files www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vinjadevix",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}
