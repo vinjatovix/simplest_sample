@@ -4,128 +4,112 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <header>
+    <header class="super-header">
       <h1>HTML & CSS HW</h1>
       <h2>HAB JSB07CO</h2>
       <nav>
-        <ul>
-          <li><a href="/index.html">Inicio</a></li>
-          <li><a href="/contact.html">Contacto</a></li>
+        <ul class="super-header__list">
+          <li>
+            <a class="super-header__listItem active" href="/index.html"
+              >Inicio</a
+            >
+          </li>
+          <li>
+            <a class="super-header__listItem" href="/contact.html">Contacto</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <aside>
-      <article>
-        <header>
-          <img src="./assets/img/profile.jpg" alt="avatar" />
+    <aside class="sidebar-left">
+      <article class="sidebar-left__article">
+        <header class="sidebar-left__header">
+          <img
+            class="sidebar-left__header-img"
+            src="./assets/img/profile.jpg"
+            alt="avatar"
+          />
           <h3>Pablo Viña</h3>
           <ul>
-            <li>Edad: 36 años.</li>
-            <li>Natural de Santiago de Compostela</li>
+            <li>Santiago de Compostela</li>
+            <li>React developer</li>
+            <li>Sound engineer</li>
+            <li>36 años.</li>
           </ul>
         </header>
-        <section>
+        <section class="sidebar-left__social">
           <h4>RRSS</h4>
           <ul>
-            <li>
-              LinkedIn:
+            <li class="sidebar-left__social-link social-linkedin">
               <a href="https://www.linkedin.com/in/1337sound/">Pablo Viña</a>
             </li>
-            <li>
-              ImDB:
+            <li class="sidebar-left__social-link social-imdb">
               <a href="https://www.imdb.com/name/nm4453287/">Pablo Viña</a>
             </li>
-            <li>
-              Ig Developer:
-              <a href="https://www.instagram.com/vinjadevix/">@vinjadevix</a>
-            </li>
-            <li>
-              Ig Sonido:
+            <li class="sidebar-left__social-link social-instagram">
               <a href="https://www.instagram.com/vinjatovix/">@vinjatovix</a>
             </li>
-            <li>
-              Refraneiro Galego:
+            <li class="sidebar-left__social-link social-instagram">
               <a href="https://www.instagram.com/refraneiro_galego/"
                 >@refraneiro_galego</a
               >
             </li>
-            <li>
-              Github: <a href="https://github.com/vinjatovix">vinjatovix</a>
+            <li class="sidebar-left__social-link social-github">
+              <a href="https://github.com/vinjatovix">vinjatovix</a>
             </li>
-            <li>
-              Codewars:
-              <a href="https://www.codewars.com/users/vinjatovix">Vinjatovix</a>
+            <li class="sidebar-left__social-link social-spotify">
+              <a
+                href="https://open.spotify.com/show/1yJqOPzu41mk6D9EE2QfLp?si=sv2E1X_oRNKXwdk7x7s_wA"
+                >Paisajes Sonoros</a
+              >
             </li>
           </ul>
         </section>
       </article>
     </aside>
-    <main>
-      <article>
+    <main class="main-content">
+      <article class="filias">
         <header>
           <h2>Filias</h2>
         </header>
         <section>
           <h3>Personajes</h3>
           <ul>
-            <li data-category="personajes" data-way="filosofia">Buda</li>
-            <li data-category="personajes" data-way="filosofia">Boddidharma</li>
-            <li data-category="personajes" data-way="filosofia">
-              Antoine de Saint-Exupéry
-            </li>
-            <li data-category="personajes" data-way="filosofia">
-              Herman Hesse
-            </li>
-            <li data-category="personajes" data-way="filosofia ciencia">
-              Nikola Tesla
-            </li>
-            <li data-category="personajes" data-way="filosofia ciencia">
-              Ada Lovelace
-            </li>
-            <li data-category="personajes" data-way="filosofia ciencia arte">
-              Hedy Lamarr
-            </li>
-            <li data-category="personajes" data-way="filosofia ciencia">
-              Aaron Swartz
-            </li>
-            <li data-category="personajes" data-way="filosofia ciencia">
-              Dean Kamen
-            </li>
-            <li data-category="personajes" data-way="filosofia ciencia">
-              Jacques Fresco
-            </li>
-            <li data-category="personajes" data-way="filosofia ciencia arte">
-              Gary Gygax
-            </li>
-            <li>Akira Toriyama</li>
+            <li data-category="filosofia">Buda</li>
+            <li data-category="filosofia">Boddidharma</li>
+            <li data-category="literatura">Antoine de Saint-Exupéry</li>
+            <li data-category="literatura">Herman Hesse</li>
+            <li data-category="ciencia">Nikola Tesla</li>
+            <li data-category="ciencia">Ada Lovelace</li>
+            <li data-category="ciencia">Hedy Lamarr</li>
+            <li data-category="ciencia">Aaron Swartz</li>
+            <li data-category="ciencia">Dean Kamen</li>
+            <li data-category="ciencia">Jacques Fresco</li>
+            <li data-category="ocio">Gary Gygax</li>
           </ul>
         </section>
         <section>
           <h3>Literatura</h3>
           <ul>
-            <li data-category="literatura" data-way="vida">Bushido</li>
-            <li data-category="literatura" data-way="vida">Tao Te Ching</li>
-            <li data-category="literatura" data-way="vida">I Ching</li>
-            <li data-category="literatura" data-way="vida">El Principito</li>
-            <li data-category="literatura" data-way="vida">
-              El lobo estepario
-            </li>
-            <li data-category="literatura" data-way="vida arte">Rayuela</li>
-            <li data-category="literatura" data-way="vida ciencia">Física</li>
-            <li data-category="literatura" data-way="vida ciencia">
-              Física de ondas
-            </li>
-            <li data-category="literatura" data-way="vida ciencia">Audio</li>
+            <li data-category="filosofia" data-way="vida">Bushido</li>
+            <li data-category="filosofia">Tao Te Ching</li>
+            <li data-category="filosofia">I Ching</li>
+            <li data-category="salud" data-way="vida">El Principito</li>
+            <li data-category="salud" data-way="vida">El lobo estepario</li>
+            <li data-category="ocio" data-way="arte">Rayuela</li>
+            <li data-category="ciencia" data-way="ciencia">Física</li>
+            <li data-category="ciencia" data-way="ciencia">Física de ondas</li>
+            <li data-category="ciencia" data-way="ciencia">Audio</li>
           </ul>
         </section>
       </article>
 
-      <article>
+      <article class="scheduler">
         <header>
-          <h3>Horario idílico</h3>
+          <h2>Horario idílico</h2>
         </header>
         <table>
           <caption>
@@ -182,7 +166,7 @@
         </section>
       </article>
     </main>
-    <footer>
+    <footer class="footer">
       <p>&copy;2021, Vinjadevix</p>
       <ul>
         <li><a href="https://sonvina.es" target="_blank">Diseño Sonoro</a></li>
